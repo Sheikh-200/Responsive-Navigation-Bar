@@ -34,6 +34,8 @@ Font Awesome (for icons)
 
 📸 Preview
 
+   Full Screenshot.png
+
 
 
 📲 How to Run
