@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navigation Bar</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Correct Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">MyWebsite</div>
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Social Media Icons (Top Right) -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1AfdNEf9dw/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/sheiikh2002" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://instagram.com/sheikh.2002" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://linkedin.com/in/shariful-islam-sheikh" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Page Sections -->
+  <section id="home">
+    <h1>Welcome to MyWebsite</h1>
+    <p>This is the home section where we introduce our website and provide a quick overview.</p>
+  </section>
+
+  <section id="about">
+    <h1>About Us</h1>
+    <p>We are a creative team passionate about building responsive, modern, and user-friendly websites.</p>
+  </section>
+
+  <section id="services">
+    <h1>Our Services</h1>
+    <p>We offer web design, development, SEO optimization, and digital marketing solutions.</p>
+  </section>
+
+  <section id="portfolio">
+    <h1>Portfolio</h1>
+    <p>Here you can explore some of our previous projects showcasing creativity and professionalism.</p>
+  </section>
+
+  <section id="contact">
+    <h1>Contact Us</h1>
+    <p>If you would like to get in touch, please email us at <b>info@mywebsite.com</b> or call +91-9876543210.</p>
+  </section>
+
+  <!-- Footer with Social Media Icons -->
+  <footer>
+    <p>© 2025 MyWebsite | Follow us on:</p>
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/share/1AfdNEf9dw/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/sheiikh2002" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://instagram.com/sheikh.2002" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://linkedin.com/in/shariful-islam-sheikh" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle menu on click (for mobile)
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
